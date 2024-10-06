@@ -1,0 +1,44 @@
+/* BITWIG KEYBOARD FIXES
+ 
+!CAUTION!
+If you're running an AHK script that modifies 
+how mouse buttons behave, do NOT integrate this
+script into it, neither by copy-pasting nor by 
+include-keyword. AHK does NOT run in multiple 
+threads, thus KeyWait and such will block mouse
+functions from proceeding, resulting in unwanted
+behavior.
+ 
+*/
+ 
+#Requires AutoHotkey >=2.0
+scriptName := "Von Elsewhere's Bitwig Momentary Play"
+#SingleInstance Force
+ 
+TrayTip("AutoHotkey", (scriptName . " script started"))
+ 
+;Make the shortcuts work only on Bitwig windows
+#HotIf WinActive("ahk_class bitwig")
+ 
+;Disable menu masking with ctrl as Bitwig doesn't respond to alt menus and the script doesn't use win key modifier
+A_MenuMaskKey := ""
+ 
+; KEYBOARD FIXES START HERE
+ 
+; Momentary play
+$*space:: {
+    Send "{blind}{space down}" "{blind}{space up}"
+    if KeyWait("space", "T0.3") {
+        return
+    }
+    else if Keywait("space") {
+        send "{space down}" "{space up}"
+    }
+    
+}
+ 
+;End HotIf
+#HotIf
+ 
+;Restore the default menumaskkey
+A_MenuMaskKey := "vk11sc01D"
