@@ -7,10 +7,10 @@
 # The script is based on the xbindkeys and xdotool utilities
 
 # Check if the source file exists before creating a symbolic link
-if [ -f ~/dev/bash/bitwig/.xbindkeysrc ]; then
-    ln -sf ~/dev/bash/bitwig/.xbindkeysrc ~/.xbindkeysrc
+if [ -f ~/dev/bash/bitwig/.xbindkeysrc_bitwig ]; then
+    ln -sf ~/dev/bash/bitwig/.xbindkeysrc_bitwig ~/.xbindkeysrc_bitwig
 else
-    echo "Source file ~/dev/bash/bitwig/.xbindkeysrc does not exist."
+    echo "Source file ~/dev/bash/bitwig/.xbindkeysrc_bitwig does not exist."
     exit 1
 fi
 
@@ -19,4 +19,4 @@ pkill -x xbindkeys 2>/dev/null
 pkill -x xbindkeys-show 2>/dev/null
 
 # Start xbindkeys with the specified configuration file
-xbindkeys -f ~/.xbindkeysrc
+xbindkeys -f ~/.xbindkeysrc_bitwig
