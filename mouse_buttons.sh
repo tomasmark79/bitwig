@@ -3,15 +3,20 @@
 # https://github.com/tomasmark79/bitwig-transport-control-script
 # This script is a part of the Bitwig Transport Control Script
 
-ln -s ~/dev/bash/bitwig/.xbindkeysrc ~/.xbindkeysrc
+# This file registers the mouse buttons for Bitwig Studio
+# The script is based on the xbindkeys and xdotool utilities
 
-# kill all xbindkeys and xbindkeys-show
-killall xbindkeys 2>/dev/null
-killall xbindkeys-show 2>/dev/null
+# Check if the source file exists before creating a symbolic link
+if [ -f ~/dev/bash/bitwig/.xbindkeysrc ]; then
+    ln -sf ~/dev/bash/bitwig/.xbindkeysrc ~/.xbindkeysrc
+else
+    echo "Source file ~/dev/bash/bitwig/.xbindkeysrc does not exist."
+    exit 1
+fi
 
-# start xbindkeys
+# Kill all xbindkeys and xbindkeys-show processes if they are running
+pkill -x xbindkeys 2>/dev/null
+pkill -x xbindkeys-show 2>/dev/null
+
+# Start xbindkeys with the specified configuration file
 xbindkeys -f ~/.xbindkeysrc
-
-
-
-

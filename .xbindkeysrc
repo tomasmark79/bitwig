@@ -38,12 +38,12 @@
 #keystate_scrolllock= enable
 
 # mouse button 8
+# play/stop
 "/home/tomas/dev/bash/bitwig/bitwig_transport.sh"
 b:8
-"/home/tomas/dev/bash/bitwig/bitwig_transport.sh"
-b:8 + Release
 
 # mouse button 9
+# play......stop
 "/home/tomas/dev/bash/bitwig/bitwig_transport.sh"
 b:9
 "/home/tomas/dev/bash/bitwig/bitwig_transport.sh"
