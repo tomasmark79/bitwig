@@ -1,10 +1,6 @@
 #!/bin/bash
-# Tomas Mark (tomas@digitalspace.name)
-# https://github.com/tomasmark79/bitwig-transport-control-script
-# This script is a part of the Bitwig Transport Control Script
-
+# Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
 # This file registers the mouse buttons for Bitwig Studio
-# The script is based on the xbindkeys and xdotool utilities
 
 # Check if the source file exists before creating a symbolic link
 if [ -f ~/dev/bash/bitwig/.xbindkeysrc_bitwig ]; then

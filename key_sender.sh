@@ -1,7 +1,6 @@
 #!/bin/bash
-# Tomas Mark (tomas@digitalspace.name)
-# https://github.com/tomasmark79/bitwig-transport-control-script
-# This script is a part of the Bitwig Transport Control Script
+# Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
+# This file registers the mouse buttons for Bitwig Studio
 
 # Get window information using xwininfo
 WINDOW_INFO=$(xwininfo -root -tree | grep "com.bitwig.BitwigStudio")
