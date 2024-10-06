@@ -3,7 +3,8 @@
 
 - This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
 - The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
-- The project also solves the ongoing problems with stolen SPACEBAR key control when window focus is within child plug-ins window. Very often scenario not only in Linux! This problem will simply disappear, because you will have the most comfortable option of Play/Stop transport control.
+- The project also solves the ongoing problems with stolen **SPACEBAR key control** when window focus is within child plug-ins window. Very often scenario not only in Linux! This problem will simply disappear, because you will have the most comfortable option of Play/Stop transport control.
+- It is also a very interesting experience that you can call Play even if you are outside the work window or activity. Starting the transport control will show you the window back.
 
 # What is it about?
 This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport.
