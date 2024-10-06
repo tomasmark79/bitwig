@@ -116,7 +116,7 @@ To ensure `xbindkeys` runs automatically when you start your system, you can add
   ```bash
   xwininfo -root -tree | grep "com.bitwig.BitwigStudio"
   ```
-
+nofrustration
 This setup allows you to easily control Bitwig Studio's transport using additional mouse buttons in a Linux environment.
 
 ## License
@@ -142,3 +142,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+bitwig spacebar plugin daw mouse frustrated
