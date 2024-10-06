@@ -1,52 +1,34 @@
 # Bitwig Transport Control Script
-# 2024 Tomas Mark (tomas@digitalspace.name)
+# Forget the spacebar. The king is dead. Long live the Side Mouse Button.
+2024 Tomas Mark (tomas@digitalspace.name)
 
-## This project came into existence today, so it will take some time to simplify the documentation and possibly the structure of the project.
+This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
 
-This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport. It is particularly useful when a plugin window is in focus, as the space bar may not work in that case.
+ - The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
+ - The project also solves the ongoing problems with stolen SPACEBAR plug-ins. This problem will simply disappear, because you will have the most comfortable option of Play/Stop transport control.
 
+
+
+# What is it about?
+This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport. It is particularly useful when a plugin window is in focus, as the space bar may not work in that case. Very often scenario not only in Linux!
+
+
+# Magic with the mouse side button
 
 https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
 
 
+# It is easy to configure
+
 ## Requirements
-- [xbindkeys](https://github.com/gitGNU/gnu_xbindkeys): A tool to manage input devices.
+- [xbindkeys](https://github.com/gitGNU/gnu_xbindkeys): A tool to manage input devices buttons.
 - [xdotool](https://github.com/jordansissel/xdotool): A tool to simulate window and keyboard interactions.
 - [Yabridge](https://github.com/robbert-vdh/yabridge): A modern and transparent way to use Windows VST plugins on Linux.
 
-To install `xdotool` on Ubuntu or any Debian-based system:
+To install `xdotool` and `xbindkeys` on Ubuntu or any Debian-based system:
 
 ```bash
 sudo apt install xdotool xbindkeys
-```
-
-## Usage
-
-The script searches for the window named "Bitwig Studio," activates it, and simulates a space bar press to start/stop playback.
-
-```bash
-#!/bin/bash
-WINDOW_ID=$(xdotool search --name "Bitwig Studio")
-if [ ! -z "$WINDOW_ID" ]; then
-  xdotool windowactivate --sync $WINDOW_ID
-  xdotool key --window $WINDOW_ID space
-fi
-```
-
-### Steps:
-
-1. Make sure `xdotool` is installed.
-2. Save the script to a file, e.g., `bitwig-transport.sh`.
-3. Make the script executable:
-
-```bash
-chmod +x bitwig-transport.sh
-```
-
-4. Run the script:
-
-```bash
-./bitwig-transport.sh
 ```
 
 ### Recommended: Assign to a Global Shortcut
