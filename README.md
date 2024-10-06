@@ -1,19 +1,26 @@
 # Bitwig Transport Control Script
 # Forget the spacebar. The king is dead. Long live the Side Mouse Button.
 
-This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
-
- - The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
- - The project also solves the ongoing problems with stolen SPACEBAR plug-ins. This problem will simply disappear, because you will have the most comfortable option of Play/Stop transport control.
+- This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
+- The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
+- The project also solves the ongoing problems with stolen SPACEBAR plug-ins. This problem will simply disappear, because you will have the most comfortable option of Play/Stop transport control.
 
 # What is it about?
 This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport. It is particularly useful when a plugin window is in focus, as the space bar may not work in that case. Very often scenario not only in Linux!
 
-# Magic with the mouse side button
+# Mouse Side Button Actions
+- Mouse Forward Button: Play transport while the button is pressed; stop when released.
+- Mouse Backward Button: Start playing transport when the button is pressed; stop when the button is pressed again (toggle).
+
+## Video overview
 
 https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
 
+## Todo
 
+lot of combination which will come in future
+
+# Guide 
 Here's a step-by-step guide on how to set up and use the two scripts (`key_sender.sh` and `prepare_environment.sh`) for controlling the transport (play/stop) in Bitwig Studio using mouse buttons in a Linux environment with Xorg.
 
 ### Prerequisites:
