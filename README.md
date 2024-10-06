@@ -94,6 +94,13 @@ To ensure `xbindkeys` runs automatically when you start your system, you can add
   ```bash
   xbindkeys --key
   ```
+
+  or
+
+  ```bash
+  xev
+  ```
+  
   Press the mouse buttons to see if they are recognized.
   
 - If Bitwig Studio is not responding to the script, ensure that the window name and ID are correctly fetched by `xwininfo` and `xdotool`. You can manually check the output with:
