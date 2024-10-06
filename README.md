@@ -3,6 +3,10 @@
 
 This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport. It is particularly useful when a plugin window is in focus, as the space bar may not work in that case.
 
+
+https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
+
+
 ## Requirements
 - [xbindkeys](https://github.com/gitGNU/gnu_xbindkeys): A tool to manage input devices.
 - [xdotool](https://github.com/jordansissel/xdotool): A tool to simulate window and keyboard interactions.
