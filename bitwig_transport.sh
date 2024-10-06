@@ -3,9 +3,13 @@
 # https://github.com/tomasmark79/bitwig-transport-control-script
 # This script is a part of the Bitwig Transport Control Script
 
-WINDOW_ID=$(xdotool search --name "Bitwig Studio")
+# Get window information using xwininfo
+WINDOW_INFO=$(xwininfo -root -tree | grep "com.bitwig.BitwigStudio")
 
-# If Bitwig Studio
+# Extract window ID from the information
+WINDOW_ID=$(echo "$WINDOW_INFO" | awk '{print $1}')
+
+# If Bitwig Studio window is found
 if [ ! -z "$WINDOW_ID" ]; then
   # Get the window name
   WINDOW_NAME=$(xdotool getwindowname $WINDOW_ID)
