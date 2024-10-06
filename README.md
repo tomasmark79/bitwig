@@ -1,6 +1,8 @@
 # Bitwig Transport Control Script
 # 2024 Tomas Mark (tomas@digitalspace.name)
 
+## This project came into existence today, so it will take some time to simplify the documentation and possibly the structure of the project.
+
 This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport. It is particularly useful when a plugin window is in focus, as the space bar may not work in that case.
 
 
