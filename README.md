@@ -56,7 +56,7 @@ In KDE Plasma, for example, you can set up a global shortcut to run this script:
 
 This is free and unencumbered software released into the public domain under [The Unlicense](https://unlicense.org/).
 
-## Idea
+## Ideas
 
-Tomáš Mark
+Welcome.
 
