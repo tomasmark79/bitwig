@@ -14,14 +14,14 @@ The scripts located in this project activate specific captures of your mouse's s
 - Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle Alt+s)** 
 - Alt + Mouse Backward Button: **Mute / UnMute Track (toggle Alt+w)**
 
-### Todo
+### Future is not clear :D I will need more timr to knwo what will be useful to add. You may fork and add your own.
 - Ctrl + Mouse Forward Button:
 - Ctrl + Mouse Backward Button: 
 - Shift + Mouse Forward Button:
 - Shift + Mouse Backward Button: 
 - Ctrl + ... + ...
 
-## Video overview
+## How it works 
 
 https://github.com/user-attachments/assets/fdb544d6-87c5-4a18-b5f6-9b458d08bc19
 
