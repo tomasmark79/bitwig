@@ -51,7 +51,7 @@ Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events an
 
 `./start_environment.sh`
 
-and uses Bitwig Studio as usually with new feature.
+and using Bitwig Studio as usually with new feature.
 
 ## mouse buttons map
  - Mouse 5 Button: Play/Stop transport (toggle spacebar).
