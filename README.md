@@ -17,18 +17,6 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
 ```
 
-## start 🖱️🍒🫐
-
-```
-./start_environment.sh
-```
-
-## stop
-
-```
-./stop_environment.sh
-```
-
 ## you will see those files
 
 ```
@@ -57,7 +45,7 @@ File `stop_environment.sh` will stop all operations in memory.
 
 Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events and calling commands to Bitwig Studio window.
 
-## just run the shell script file
+## for start just run the shell script file 🖱️🍒🫐
 
 `./start_environment.sh`
 
@@ -77,10 +65,18 @@ not used yet - reserved
  - Shift + Mouse 5 Button: not defined yet
  - Shift + Mouse 4 Button: not defined yet
 
+## for stop
+
+```
+./stop_environment.sh
+```
+
 ## issues
+
  If your mouse side buttons are not reacting you will need to check if Xorg is registering clicks to these buttons. Check the ID of each of these buttons and rewrite them in file `.xbindkeysrc_bitwig`.
 
 ## tags
+
 #bitwig #spacebar #bash #shell #daw #transport #midi #mouse #buttons
 
 
