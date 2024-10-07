@@ -49,7 +49,7 @@ Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events an
 
 ## just run the shell script file
 
-'start_environment.sh'
+`./start_environment.sh`
 
 and uses Bitwig Studio as usually with new feature.
 
