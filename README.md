@@ -11,7 +11,7 @@ I guess that the power is in the simple thinks. Let't go make this project deplo
 
 clone this repository
 ```
-git clone git@github.com:tomasmark79/bitwig-transport-control-script.git
+git clone https://github.com/tomasmark79/bitwig-transport-control-script.git
 ```
 
 
