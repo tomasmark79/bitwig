@@ -20,6 +20,7 @@ This script activates the Bitwig Studio window and simulates pressing the desire
 
 ## Video overview
 
+https://github.com/user-attachments/assets/fdb544d6-87c5-4a18-b5f6-9b458d08bc19
 https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
 
 ## Todo
