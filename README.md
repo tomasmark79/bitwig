@@ -11,7 +11,7 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 
 `Linux, bash shell, X11`
 
-## installation (copy paste to your shell)
+## installation (copy paste to your shell 😉
 
 ```
 sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && ls -l && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh
