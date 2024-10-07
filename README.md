@@ -7,14 +7,13 @@
 - It is also a very interesting experience that you can call Play even if you are outside the work window or activity. Starting the transport control will show you the window back.
 
 # What is it about?
-This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport.
+This script activates the Bitwig Studio window and simulates pressing the desired shortcuts to him.
 
 # Function
-
-- Mouse Forward Button:  **Play/Stop transport (toggle).**
-- Mouse Backward Button: **Play transport while the button is pressed; Stop when released.**
-- Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle). (Alt+s) ** 
-- Alt + Mouse Backward Button: **Mute / UnMute Track (toggle). (Alt+w) **
+- Mouse Forward Button:  **Play/Stop transport (toggle spacebar).**
+- Mouse Backward Button: **Play transport while the button is pressed down; Stop when released up.**
+- Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle Alt+s)** 
+- Alt + Mouse Backward Button: **Mute / UnMute Track (toggle Alt+w)**
 
 ## Video overview
 
