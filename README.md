@@ -11,7 +11,7 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 
 `Linux, bash shell, X11`
 
-## installation for Debian based distro
+## installation for debian based distributions
 
 copy/paste to your shell 😉 and press enter
 
