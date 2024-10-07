@@ -61,7 +61,7 @@ and using Bitwig Studio as usually with new transport control feature. 💥It is
 
 ![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
 
-not used yet
+not used yet - reserved 
  - Ctrl + Mouse 5 Button: not defined yet
  - Ctrl + Mouse 4 Button: not defined yet
  - Shift + Mouse 5 Button: not defined yet
