@@ -2,6 +2,9 @@
 # Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
 # This file registers the mouse buttons for Bitwig Studio
 
+# Change to the directory where the script is located
+cd "$(dirname "$0")"
+
 # Notify
 notify-send "Starting transport control environment..."
 
