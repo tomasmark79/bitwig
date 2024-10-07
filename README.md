@@ -10,11 +10,17 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 ## installation
 
 ```
-sudo apt update && sudo apt install git xbindkeys xdotool -y
-git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && ls -l && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh
+sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && ls -l && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh
+```
+
+## start
+
+```
+./start_environment.sh
 ```
 
 ## you will see those files
+
 ```
 Cloning into 'bitwig-transport-control-script'...
 remote: Enumerating objects: 167, done.
@@ -30,7 +36,9 @@ celkem 20
 -rwxrwxr-x 1 tomas tomas  711 říj  8 00:03 start_environment.sh
 -rwxrwxr-x 1 tomas tomas  331 říj  8 00:03 stop_environment.sh
 ```
+
 ## files explanation
+
 File `key_sender.sh` is shell script responsible for sending commands to Bitwig Studio window.
 
 File `start_environment.sh` is shell script responsive for monitoring events from devices like a mice.
