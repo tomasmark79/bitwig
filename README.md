@@ -5,7 +5,7 @@ I tried using the global OS hotkeys initially and that works pretty well if only
 As another option, how to control Bitwig Studio under all circumstances, was to try hacking into the MIDI channel and controlling the MIDI sequences directly. But that's something I haven't been able to do yet, and I'm not sure that the effort put into developing something like this will be worthwhile in the end.
 
 ## success
-**Finally, I came up with the idea of ​​using an ordinary 5-button mouse as the Bitwig Studio transport controller. And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!**
+**Finally, I came up with the idea of ​​using an ordinary 5-button 🐁mouse🐁 as the Bitwig Studio transport controller. And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!**
 
 ## installation
 
@@ -51,7 +51,7 @@ Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events an
 
 `./start_environment.sh`
 
-and using Bitwig Studio as usually with new feature.
+and using Bitwig Studio as usually with new transport control feature. 💥It is intuitive!💥
 
 ## mouse buttons map
  - Mouse 5 Button: Play/Stop transport (toggle spacebar).
