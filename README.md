@@ -11,8 +11,11 @@ I guess that the power is in the simple thinks. Let't go make this project deplo
 
 clone this repository
 ```
-git clone https://github.com/tomasmark79/bitwig-transport-control-script.git
+git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && ls -l
 ```
+
+you will see those files
+
 
 
 
