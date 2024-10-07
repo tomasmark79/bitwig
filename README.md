@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/fdb544d6-87c5-4a18-b5f6-9b458d08bc19
 https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
 
 # Guide 
-Here's a step-by-step guide on how to set up and use the two scripts (`key_sender.sh` and `start_environment.sh`) for controlling the transport (play/stop) in Bitwig Studio using mouse buttons in a Linux environment with Xorg.
+Here's a step-by-step guide on how to set up.
 
 ### Prerequisites:
 1. You must have the following utilities installed:
