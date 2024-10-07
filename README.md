@@ -11,7 +11,7 @@ This script activates the Bitwig Studio window and simulates pressing the desire
 
 # My control layout
  
- You may modify to your preference afterwards you understand how this scripts works.
+ You may modify to your preference when you understand how this scripts works.
 
 - Mouse Forward Button:  **Play/Stop transport (toggle spacebar).**
 - Mouse Backward Button: **Play transport while the button is pressed down; Stop when released up.**
