@@ -8,7 +8,7 @@ The scripts located in this project activate specific captures of your mouse's s
 # My control layout
  You may modify to your preference when you understand how this scripts works.
 
-### Used right now
+### Default button configuration settings in this project
 - Mouse Forward Button:  **Play/Stop transport (toggle spacebar).**
 - Mouse Backward Button: **Play transport while the button is pressed down; Stop when released up.**
 - Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle Alt+s)** 
