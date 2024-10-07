@@ -38,13 +38,28 @@
 #keystate_scrolllock= enable
 
 # mouse button 8
-# 
-"/home/tomas/dev/bash/bitwig/key_sender.sh space"
+# Play/Stop = Down/Up
+"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
 b:8
-"/home/tomas/dev/bash/bitwig/key_sender.sh space"
+"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
 b:8 + Release
 
 # mouse button 9
-# 
-"/home/tomas/dev/bash/bitwig/key_sender.sh space"
+# Play/Stop = Down/Down
+"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
 b:9
+
+# Alt + mouse button 8
+# Mute/UnMute = Down/Down
+"/home/tomas/dev/bash/bitwig/key_sender.sh alt+w"
+Alt + b:8
+
+# Alt + mouse button 9
+# Solo/UnSolo = Down/Down
+"/home/tomas/dev/bash/bitwig/key_sender.sh alt+s"
+Alt + b:9
+
+
+
+
+

@@ -9,10 +9,13 @@
 # What is it about?
 This script activates the Bitwig Studio window and simulates pressing the space bar to start or stop the transport.
 
-# Mouse Side Button Actions
-- Mouse Backward Button: Start playing transport when the button is pressed; stop when the button is pressed again (toggle).
-- Mouse Forward Button: Play transport while the button is pressed; stop when released.
-  
+# Function
+
+- Mouse Forward Button:  **Play/Stop transport (toggle).**
+- Mouse Backward Button: **Play transport while the button is pressed; Stop when released.**
+- Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle).** 
+- Alt + Mouse Backward Button: **Mute / UnMute Track (toggle).**
+
 ## Video overview
 
 https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
