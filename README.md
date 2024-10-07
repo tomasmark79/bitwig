@@ -1,17 +1,13 @@
-# Bitwig Transport Control Script
 # Forget the spacebar. The king is dead. Long live the Side Mouse Button.
+## The project also solves persistent problems with the SPACE BAR key not working when the plugin window is open and when this plugin window is actively focused.
+## This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
+## The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
 
-- This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
-- The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
-- The project also solves persistent problems with the SPACE BAR not working while active ui plugin focus.
-- It is also a very interesting experience that you can call Play even if you are outside the work window or activity. Starting the transport control will show you the window back.
-
-# What is it about?
-This script activates the Bitwig Studio window and simulates pressing the desired shortcuts to him.
+# What exactly does this solution do?
+This solution activates the Bitwig Studio window and simulates pressing the desired shortcuts to him.
 
 # My control layout
- 
-You may modify to your preference when you understand how this scripts works.
+ You may modify to your preference when you understand how this scripts works.
 
 ### Used right now
 - Mouse Forward Button:  **Play/Stop transport (toggle spacebar).**
