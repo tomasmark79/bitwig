@@ -19,7 +19,8 @@ https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
 
 ## Todo
 
-lot of combination which will come in future
+ - use other shortcuts for frequently used functions
+ - use midi transport on connected midi controller as the next possibility to control transport
 
 # Guide 
 Here's a step-by-step guide on how to set up and use the two scripts (`key_sender.sh` and `prepare_environment.sh`) for controlling the transport (play/stop) in Bitwig Studio using mouse buttons in a Linux environment with Xorg.
