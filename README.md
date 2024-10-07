@@ -38,6 +38,8 @@ File `start_environment.sh` is shell script responsive for monitoring events fro
 
 File `stop_environment.sh` will stop all operations in memory.
 
+Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events and calling commands to Bitwig Studio window.
+
 ## just run the shell script file
 
 'start_environment.sh'
@@ -56,9 +58,10 @@ not used yet
  - Shift + Mouse 5 Button: not defined yet
  - Shift + Mouse 4 Button: not defined yet
 
+## issues
+ If your mouse side buttons are not reacting you will need to check if Xorg is registering clicks to these buttons. Check the ID of each of these buttons and rewrite them in file `.xbindkeysrc_bitwig`.
 
-
-
+## MIT Licence, Tomáš Mark, Enjoy
 
 
 
