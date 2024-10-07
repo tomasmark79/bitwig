@@ -13,8 +13,8 @@ This script activates the Bitwig Studio window and simulates pressing the space 
 
 - Mouse Forward Button:  **Play/Stop transport (toggle).**
 - Mouse Backward Button: **Play transport while the button is pressed; Stop when released.**
-- Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle).** 
-- Alt + Mouse Backward Button: **Mute / UnMute Track (toggle).**
+- Alt + Mouse Forward Button: **Solo / UnSolo Track (toggle). (Alt+s) ** 
+- Alt + Mouse Backward Button: **Mute / UnMute Track (toggle). (Alt+w) **
 
 ## Video overview
 
