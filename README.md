@@ -9,7 +9,7 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 
 ## requirements
 
-`Linux, X11`
+`Linux, bash shell, X11`
 
 ## installation (copy paste to your shell)
 
