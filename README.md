@@ -1,10 +1,10 @@
 # Forget the spacebar. The king is dead. Long live the Side Mouse Button.
-## The project also solves persistent problems with the SPACE BAR key not working when the plugin window is open and when this plugin window is actively focused.
-## This project will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
-## The project focuses on controlling the transport layer using the mouse and possibly other global keyboard shortcuts in Linux.
+ - The scripts also solves persistent problems with the SPACE BAR key not working when the plugin window is open and when this plugin window is actively focused.
+ - The scripts will help you focus on creating in Bitwig Studio on Linux and experience a truly amazing Bitwig experience.
+ - The project focuses on controlling the transport layer using the **mouse** and possibly other global keyboard shortcuts in Linux.
 
 # What exactly does this solution do?
-This solution activates the Bitwig Studio window and simulates pressing the desired shortcuts to him.
+The scripts located in this project activate specific captures of your mouse's side buttons and send commands to the Bitwig Studio window.
 
 # My control layout
  You may modify to your preference when you understand how this scripts works.
