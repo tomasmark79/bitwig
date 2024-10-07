@@ -68,7 +68,8 @@ not used yet
 ## issues
  If your mouse side buttons are not reacting you will need to check if Xorg is registering clicks to these buttons. Check the ID of each of these buttons and rewrite them in file `.xbindkeysrc_bitwig`.
 
-## MIT Licence, Tomáš Mark, Enjoy
+## tags
+#bitwig #spacebar #bash #shell #daw #transport #midi #mouse #buttons
 
 
 
