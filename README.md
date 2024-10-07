@@ -38,7 +38,8 @@ File `start_environment.sh` is shell script responsive for monitoring events fro
 
 File `stop_environment.sh` will stop all operations in memory.
 
-# Your start is just to run the 'start_environment.sh' file.
+# Just run the
+ - 'start_environment.sh' file and use Bitwig Studio transport controll with your computer mouse side buttons.
 
 
 
