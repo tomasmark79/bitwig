@@ -39,12 +39,12 @@
 
 # mouse button 8
 # 
-"/home/tomas/dev/bash/bitwig/key_sender.sh"
+"/home/tomas/dev/bash/bitwig/key_sender.sh space"
 b:8
-"/home/tomas/dev/bash/bitwig/key_sender.sh"
+"/home/tomas/dev/bash/bitwig/key_sender.sh space"
 b:8 + Release
 
 # mouse button 9
 # 
-"/home/tomas/dev/bash/bitwig/key_sender.sh"
+"/home/tomas/dev/bash/bitwig/key_sender.sh space"
 b:9

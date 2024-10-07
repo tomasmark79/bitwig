@@ -2,6 +2,14 @@
 # Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
 # This file registers the mouse buttons for Bitwig Studio
 
+# Check if a key parameter is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <key>"
+  exit 1
+fi
+
+KEY=$1
+
 # Get window information using xwininfo
 WINDOW_INFO=$(xwininfo -root -tree | grep "com.bitwig.BitwigStudio")
 
@@ -17,7 +25,7 @@ if [ ! -z "$WINDOW_ID" ]; then
   if [[ "$WINDOW_NAME" == *"Bitwig Studio"* ]]; then
     # Activate Bitwig Studio
     xdotool windowactivate --sync $WINDOW_ID
-    # Send space key to Bitwig Studio
-    xdotool key --window $WINDOW_ID space
+    # Send the specified key to Bitwig Studio
+    xdotool key --window $WINDOW_ID $KEY
   fi
 fi
