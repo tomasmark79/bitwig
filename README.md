@@ -73,6 +73,10 @@ not used yet - reserved
 ./stop_environment.sh
 ```
 
+## recomendation
+
+"I'm using KDE Plasma, and I have both start and stop scripts managed by global keyboard shortcuts, which is very useful for switching between Bitwig and other applications, such as browsers, where side mouse buttons can also be useful."
+
 ## issues
 
  If your mouse side buttons are not reacting you will need to check if Xorg is registering clicks to these buttons. Check the ID of each of these buttons and rewrite them in file `.xbindkeysrc_bitwig`.
