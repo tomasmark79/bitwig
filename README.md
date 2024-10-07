@@ -31,7 +31,7 @@ celkem 20
 -rwxrwxr-x 1 tomas tomas  711 říj  8 00:03 start_environment.sh
 -rwxrwxr-x 1 tomas tomas  331 říj  8 00:03 stop_environment.sh
 ```
-
+## file explanation
 File `key_sender.sh` is shell script responsible for sending commands to Bitwig Studio window.
 
 File `start_environment.sh` is shell script responsive for monitoring events from devices like a mice.
@@ -41,13 +41,13 @@ File `stop_environment.sh` will stop all operations in memory.
 ## Just run the
 'start_environment.sh' script file and use Bitwig Studio with mouse side buttons as transport control.
 
-## Current map of buttons
+## mouse buttons map
  - Mouse 5 Button: Play/Stop transport (toggle spacebar).
  - Mouse 4 Button: Play transport while the button is pressed down; Stop when released up.
  - Alt + Mouse 5 Button: Solo / UnSolo Track (toggle Alt+s)
  - Alt + Mouse 4 Button: Mute / UnMute Track (toggle Alt+w)
 
-## Free not used buttons (available to config)
+not used yet
  - Ctrl + Mouse 5 Button: not defined yet
  - Ctrl + Mouse 4 Button: not defined yet
  - Shift + Mouse 5 Button: not defined yet
