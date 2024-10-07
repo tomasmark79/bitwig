@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/e7ff335d-3596-4ca7-b877-27b0e742fe06
  - use midi transport on connected midi controller as the next possibility to control transport
 
 # Guide 
-Here's a step-by-step guide on how to set up and use the two scripts (`key_sender.sh` and `prepare_environment.sh`) for controlling the transport (play/stop) in Bitwig Studio using mouse buttons in a Linux environment with Xorg.
+Here's a step-by-step guide on how to set up and use the two scripts (`key_sender.sh` and `start_environment.sh`) for controlling the transport (play/stop) in Bitwig Studio using mouse buttons in a Linux environment with Xorg.
 
 ### Prerequisites:
 1. You must have the following utilities installed:
@@ -65,14 +65,14 @@ Here's a step-by-step guide on how to set up and use the two scripts (`key_sende
    chmod +x key_sender.sh
    ```
 
-3. **File 2: `prepare_environment.sh`**
+3. **File 2: `start_environment.sh`**
 
    This script sets up the environment by configuring xbindkeys to listen for mouse button presses and trigger the transport control.
 
    Make it executable:
 
    ```bash
-   chmod +x prepare_environment.sh
+   chmod +x start_environment.sh
    ```
 
 4. **File 3: `.xbindkeysrc_bitwig`**
@@ -81,12 +81,12 @@ Here's a step-by-step guide on how to set up and use the two scripts (`key_sende
 
 ### Running the Scripts:
 
-1. **Prepare the environment:**
+1. **Start the environment:**
 
-   Run the `prepare_environment.sh` script to set up xbindkeys with the correct configuration.
+   Run the `start_environment.sh` script to set up xbindkeys with the correct configuration.
 
    ```bash
-   ~/dev/bash/bitwig/prepare_environment.sh
+   ~/dev/bash/bitwig/start_environment.sh
    ```
 
    This will create a symbolic link to `.xbindkeysrc_bitwig` in your home directory and start `xbindkeys`, which will listen for mouse button presses.
@@ -100,7 +100,7 @@ Here's a step-by-step guide on how to set up and use the two scripts (`key_sende
 To ensure `xbindkeys` runs automatically when you start your system, you can add the following line to your session autostart script or set it as a startup application in your desktop environment:
 
 ```bash
-~/dev/bash/bitwig/prepare_environment.sh
+~/dev/bash/bitwig/start_environment.sh
 ```
 
 ### Troubleshooting:
