@@ -37,29 +37,26 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
-# mouse button 8
-# Play/Stop = Down/Up
-"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
-b:8
-"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
-b:8 + Release
-
-# mouse button 9
-# Play/Stop = Down/Down
-"if xdotool getactivewindow getwindowfocus | grep -q 'Alt_L'; then :; else /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
-b:9
-
 # Alt + mouse button 8
-# Mute/UnMute = Down/Down
-"/home/tomas/dev/bash/bitwig/key_sender.sh alt+w"
+# Mute/UnMute (detekce kombinace Alt + tlačítko 8)
+"/home/tomas/dev/bash/bitwig/key_sender.sh alt+w; touch /tmp/alt_b8_pressed"
 Alt + b:8
 
 # Alt + mouse button 9
-# Solo/UnSolo = Down/Down
+# Solo/UnSolo
 "/home/tomas/dev/bash/bitwig/key_sender.sh alt+s"
 Alt + b:9
 
+# mouse button 8 (bez Alt)
+# Play/Stop
+"if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
+b:8
 
+# Zabránění spuštění akce po kombinaci Alt + b:8
+"if [ ! -f /tmp/alt_b8_pressed ]; then /home/tomas/dev/bash/bitwig/key_sender.sh space; fi; rm -f /tmp/alt_b8_pressed"
+b:8 + Release
 
-
-
+# mouse button 9 (bez Alt)
+# Play/Stop
+"if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then /home/tomas/dev/bash/bitwig/key_sender.sh space; fi"
+b:9
