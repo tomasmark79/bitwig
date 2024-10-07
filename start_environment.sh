@@ -2,6 +2,9 @@
 # Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
 # This file registers the mouse buttons for Bitwig Studio
 
+# Notify
+notify-send "Starting transport control environment..."
+
 # Check if the source file exists before creating a symbolic link
 if [ -f ~/dev/bash/bitwig/.xbindkeysrc_bitwig ]; then
     ln -sf ~/dev/bash/bitwig/.xbindkeysrc_bitwig ~/.xbindkeysrc_bitwig
