@@ -9,7 +9,7 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 
 ## OS requirements
 
-Linux, Xorg
+`Linux, Xorg`
 
 ## installation
 
