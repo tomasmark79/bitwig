@@ -90,8 +90,8 @@ Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events an
 and using Bitwig Studio as usually with new transport control feature. 💥It is intuitive!💥
 
 ## mouse buttons map
- - button 5: **Play/Stop** ⏯️ toggle
- - button 4: **Play** ▶️⏬ while the button is pressing down; **Stop** ⏹️⏫ when the button released up.
+ - button 5: **Play/Stop** ⏯️
+ - button 4: **Play** ▶️⏬ until button released ⏹️⏫ 
  - Alt + button 5: **Solo**🕺🏼 **Unsolo** 👯‍♂️ Track toggle (in Bitwig you have to set Alt+s shortcut)
  - Alt + button 4: **Mute** 🔈 **Unmute** 🔊 Track toggle (in Bitwig you have to set Alt+w shortcut)
 
