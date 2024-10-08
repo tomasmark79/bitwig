@@ -92,8 +92,8 @@ and using Bitwig Studio as usually with new transport control feature. 💥It is
 ## mouse buttons map
  - btn5: Play/Stop ⏯️ toggle
  - btn4: Play ▶️⏬ while the button is pressing down; Stop ⏹️⏫ when the button released up.
- - Alt + btn5: Solo/Unsolo Track toggle Alt+s
- - Alt + btn4: Mute/Unmute Track toggle Alt+w
+ - Alt + btn5: Solo🕺🏼 Unsolo 👯‍♂️ Track toggle (in Bitwig you have to set Alt+s shortcut)
+ - Alt + btn4: Mute 🔈 Unmute 🔊 Track toggle (in Bitwig you have to set Alt+w shortcut)
 
 ![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
 
