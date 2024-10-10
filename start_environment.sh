@@ -12,5 +12,16 @@ notify-send "Starting transport control environment..."
 pkill -x xbindkeys 2>/dev/null
 pkill -x xbindkeys-show 2>/dev/null
 
+
 # Start xbindkeys with the specified configuration file
 xbindkeys -f .xbindkeysrc_bitwig
+
+# Check the exit status of the xbindkeys command
+if [ $? -eq 0 ]; then
+  # Send a success notification
+  notify-send "xbindkeys started successfully"
+else
+  # Send a failure notification
+  notify-send "Failed to start xbindkeys"
+fi
+

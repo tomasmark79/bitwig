@@ -47,6 +47,11 @@ Alt + b:8
 "./key_sender.sh alt+s"
 Alt + b:9
 
+# Shift + mouse button 9
+# Arm/Disarm
+"./key_sender.sh shift+r"
+Shift + b:9
+
 # mouse button 8 (bez Alt)
 # Play/Stop
 "if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then ./key_sender.sh space; fi"
