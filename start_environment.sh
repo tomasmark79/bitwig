@@ -14,7 +14,7 @@ pkill -x xbindkeys-show 2>/dev/null
 
 
 # Start xbindkeys with the specified configuration file
-xbindkeys -f .xbindkeysrc_bitwig
+xbindkeys -v -f .xbindkeysrc_bitwig
 
 # Check the exit status of the xbindkeys command
 if [ $? -eq 0 ]; then

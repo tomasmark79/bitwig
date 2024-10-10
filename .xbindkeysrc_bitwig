@@ -37,31 +37,32 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
-# Alt + mouse button 8
-# Mute/UnMute (detekce kombinace Alt + tlačítko 8)
-"./key_sender.sh alt+w; touch /tmp/alt_b8_pressed"
-Alt + b:8
-
-# Alt + mouse button 9
-# Solo/UnSolo
-"./key_sender.sh alt+s"
-Alt + b:9
-
-# Shift + mouse button 9
-# Arm/Disarm
-"./key_sender.sh shift+r"
-Shift + b:9
-
-# mouse button 8 (bez Alt)
-# Play/Stop
-"if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then ./key_sender.sh space; fi"
+# Play from Start
+"./toggle_alt_b8.sh"
 b:8
 
-# Zabránění spuštění akce po kombinaci Alt + b:8
-"if [ ! -f /tmp/alt_b8_pressed ]; then ./key_sender.sh space; fi; rm -f /tmp/alt_b8_pressed"
-b:8 + Release
+# Mute toggle 
+"./toggle_alt_b8.sh"
+Alt + b:8
 
-# mouse button 9 (bez Alt)
-# Play/Stop
-"if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then ./key_sender.sh space; fi"
+# Play from Cursor
+"./toggle_alt_b9.sh"
 b:9
+
+# Solo toggle
+"./toggle_alt_b9.sh"
+Alt + b:9
+
+# Arm toggle - TODO - zatím nefunguje
+"./toggle_shift_b9.sh"
+Shift + b:9
+
+# Nechme pro budoucí možnosti
+# # mouse button 8 (bez Alt)
+# # Play/Stop
+# "if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then ./key_sender.sh space; fi"
+# b:8
+# # Zabránění spuštění akce po kombinaci Alt + b:8
+# "if [ ! -f /tmp/alt_b8_pressed ]; then ./key_sender.sh space; fi; rm -f /tmp/alt_b8_pressed"
+# b:8 + Release
+

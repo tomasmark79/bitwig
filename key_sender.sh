@@ -31,5 +31,5 @@ for WINDOW_ID in $WINDOW_IDS; do
   fi
 done
 
-echo "Bitwig Studio window not found"
+notify-send "Bitwig Studio window not found"
 exit 1
