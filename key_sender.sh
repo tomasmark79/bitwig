@@ -13,11 +13,11 @@ KEY=$1
 # Get window information using xwininfo
 WINDOW_INFO=$(xwininfo -root -tree | grep "com.bitwig.BitwigStudio")
 
-# Extract window ID from the information
-WINDOW_ID=$(echo "$WINDOW_INFO" | awk '{print $1}')
+# Extract window IDs from the information
+WINDOW_IDS=$(echo "$WINDOW_INFO" | awk '{print $1}')
 
-# If Bitwig Studio window is found
-if [ ! -z "$WINDOW_ID" ]; then
+# Loop through each window ID
+for WINDOW_ID in $WINDOW_IDS; do
   # Get the window name
   WINDOW_NAME=$(xdotool getwindowname $WINDOW_ID)
 
@@ -27,5 +27,9 @@ if [ ! -z "$WINDOW_ID" ]; then
     xdotool windowactivate --sync $WINDOW_ID
     # Send the specified key to Bitwig Studio
     xdotool key --window $WINDOW_ID $KEY
+    exit 0
   fi
-fi
+done
+
+echo "Bitwig Studio window not found"
+exit 1
