@@ -5,103 +5,95 @@ I tried using the global OS hotkeys initially and that works pretty well if only
 As another option, how to control Bitwig Studio under all circumstances, was to try hacking into the MIDI channel and controlling the MIDI sequences directly. But that's something I haven't been able to do yet, and I'm not sure that the effort put into developing something like this will be worthwhile in the end.
 
 ## success
-**Finally, I came up with the idea of ​​using an ordinary 5-button 🐁mouse🐁 as the Bitwig Studio transport controller. And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!**
+Finally, I came up with the idea of **​​using an ordinary 5-button** 🐁 **mouse** 🐁 as the Bitwig Studio transport controller.
+
+💥 **It is very intuitive and addictive!** 💥
+
+And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!
 
 ## requirements
 
-`Linux, bash shell, X11`
-
-
+`Any Linux with X11 window server`
 
 ## installation
 
 apt
 ```
-sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 dnf
 ```
-sudo dnf install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo dnf install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 yum
 ```
-sudo yum install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo yum install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 pacman
 ```
-sudo pacman -S --noconfirm git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo pacman -S --noconfirm git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 nix-env
 ```
-nix-env -iA nixpkgs.git nixpkgs.xbindkeys nixpkgs.xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+nix-env -iA nixpkgs.git nixpkgs.xbindkeys nixpkgs.xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 zypper
 ```
-sudo zypper install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo zypper install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 emerge
 ```
-sudo emerge git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo emerge git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 eopg
 ```
-sudo eopkg install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x key_sender.sh && ls -l
+sudo eopkg install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
-## you will see those files
+## project files description
 
-```
-Cloning into 'bitwig-transport-control-script'...
-remote: Enumerating objects: 167, done.
-remote: Counting objects: 100% (167/167), done.
-remote: Compressing objects: 100% (139/139), done.
-remote: Total 167 (delta 96), reused 71 (delta 28), pack-reused 0 (from 0)
-Receiving objects: 100% (167/167), 40.99 KiB | 874.00 KiB/s, done.
-Resolving deltas: 100% (96/96), done.
-celkem 20
--rwxrwxr-x 1 tomas tomas  855 říj  8 00:03 key_sender.sh
--rw-rw-r-- 1 tomas tomas 1114 říj  8 00:03 LICENSE
--rw-rw-r-- 1 tomas tomas 1641 říj  8 00:03 README.md
--rwxrwxr-x 1 tomas tomas  711 říj  8 00:03 start_environment.sh
--rwxrwxr-x 1 tomas tomas  331 říj  8 00:03 stop_environment.sh
-```
+#### you will want to edit
 
-## files explanation
+File `.xbindkeysrc_bitwig` is responsible for definition od shortcuts at high level.
+File `toggle_parser.sh` is shell script responsible for specific shortcuts behavior.
 
+#### you won't need to edit
+
+File `start_environment.sh` is shell script responsible for monitoring events from devices.
+File `stop_environment.sh` will stop all operations in memory.
 File `key_sender.sh` is shell script responsible for sending commands to Bitwig Studio window.
 
-File `start_environment.sh` is shell script responsive for monitoring events from devices like a mice.
+## start service
+**for start the service just run the file 🖱️🍒🫐 `./start_environment.sh`**
 
-File `stop_environment.sh` will stop all operations in memory.
+## stop service
+`./stop_environment.sh`
 
-Configuration file `.xbindkeysrc_bitwig` is responsible for monitoring events and calling commands to Bitwig Studio window.
 
-## for start just run the shell script file 🖱️🍒🫐
+## project is using this default profile fit to me
 
-`./start_environment.sh`
+note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
 
-and using Bitwig Studio as usually with new transport control feature. 💥It is intuitive!💥
+ - Button 4 toggle **Play/Stop** from arranger start (key space) ⏮️▶️⏹️
+ - Button 5 toggle **Play/Stop** from arranger cursor (key alt+p) ▶️⏹️
 
-## mouse buttons map
- - button 5: toggle between **Play from cursor / Stop** ⏯️
- - button 4: toggle between **Play from start / Stop** ▶️ 
- - Alt + button 5: toggle between **Solo/Unsolo** Track (in Bitwig you have to set Alt+s shortcut)
- - Alt + button 4: toggle between **Mute🔈/Unmute**🔊 Track toggle (in Bitwig you have to set Alt+w shortcut)
+ - Alt + Button 4 toggle **Solo** from arranger start (key alt+s) ☝️👐
+ - Alt + Button 5 toggle **Mute** from arranger cursor (key alt+w) 🔈🔊
+
+ - Shift + Button 4 toggle **Arm** from arranger start (key shift+r) 🔴⚪
+ - Shift + Button 5 toggle **??/??** from arranger cursor (key shift+???)
+
+ - Control + Button 4 toggle **??/??** from arranger start (key control+???)
+ - Control + Button 5 toggle **??/??** from arranger cursor (key control+???)
 
 ![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
-
-## for stop
-
-```
-./stop_environment.sh
-```
 
 ## recomendation
 

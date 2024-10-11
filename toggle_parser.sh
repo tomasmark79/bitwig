@@ -16,7 +16,7 @@ SHIFT_PRESSED=false
 CONTROL_PRESSED=false
 ALT_PRESSED=false
 
-# varianta 1
+# varianta 1 - improved performance
 keyboard_states=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*' | xargs -I{} xinput query-state {})
 if echo "$keyboard_states" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
     SHIFT_PRESSED=true
