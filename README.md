@@ -19,7 +19,7 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 apt
 ```
-sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x tooggle_parser.sh && chmod +x key_sender.sh && ls -l
+sudo apt update && sudo apt install git xbindkeys xdotool -y && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x toggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
 dnf
