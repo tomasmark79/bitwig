@@ -5,7 +5,7 @@ I tried using the global OS hotkeys initially and that works pretty well if only
 As another option, how to control Bitwig Studio under all circumstances, was to try hacking into the MIDI channel and controlling the MIDI sequences directly. But that's something I haven't been able to do yet, and I'm not sure that the effort put into developing something like this will be worthwhile in the end.
 
 ## success
-Finally, I came up with the idea of **​​using an ordinary 5-button** 🐁 **mouse** 🐁 as the Bitwig Studio transport controller.
+Finally, I came up with the idea of **​​using an ordinary 5-button** 🐁 **mouse** 🐁 as the Bitwig Studio transport controller. 🖱️🍒🫐
 
 💥 **It is very intuitive and addictive!** 💥
 
@@ -71,7 +71,7 @@ File `stop_environment.sh` will stop all operations in memory.
 File `key_sender.sh` is shell script responsible for sending commands to Bitwig Studio window.
 
 ## start service
-**for start the service just run the file 🖱️🍒🫐 `./start_environment.sh`**
+**for start the service just run the file `./start_environment.sh`**
 
 ## stop service
 `./stop_environment.sh`
