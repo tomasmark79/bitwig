@@ -15,8 +15,6 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 ![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
 
-note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
-
 <img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
 
  - Button 4(b:8) toggle **Play/Stop** from arranger start (key spacebar)
@@ -38,6 +36,8 @@ reserved
  - Shift + Button 4(b:8) toggle **??** from arranger start (key shift+??)
    
  - Alt + Button 4(b:8) toggle **??** from arranger cursor (key alt+??)
+
+note: be aware please that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
 
 ## recomendation
 
