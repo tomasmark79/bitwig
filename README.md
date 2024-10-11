@@ -20,7 +20,7 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 ---
 
-#### default mouse map
+#### You can use any kind of computer mouse with 4 and more buttons
 
 ![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
 
