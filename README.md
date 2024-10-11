@@ -81,7 +81,7 @@ File `key_sender.sh` is shell script responsible for sending commands to Bitwig 
 
 note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
 
- - Button 4 toggle **Play/Stop** from arranger start (key space)
+ - Button 4 toggle **Play/Stop** from arranger start (key spacebar)
  - Button 5 toggle **Play/Stop** from arranger cursor (key alt+p)
 
  - Alt + Button 4 toggle **Solo** from arranger start (key alt+s)
@@ -105,7 +105,7 @@ note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 
 
 ## tags
 
-#bitwig #spacebar #bash #shell #daw #transport #midi #mouse #buttons
+# daw #bitwig #transport #spacebar #daw #midi #mouse #buttons
 
 
 
