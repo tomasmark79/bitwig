@@ -16,53 +16,72 @@ SHIFT_PRESSED=false
 CONTROL_PRESSED=false
 ALT_PRESSED=false
 
-keyboard_ids=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*')
+# varianta 1
+keyboard_states=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*' | xargs -I{} xinput query-state {})
+if echo "$keyboard_states" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
+    SHIFT_PRESSED=true
+fi
+if echo "$keyboard_states" | grep -q 'key\[37\]=down'; then
+    CONTROL_PRESSED=true
+fi
+if echo "$keyboard_states" | grep -q 'key\[64\]=down'; then
+    ALT_PRESSED=true
+fi
 
-for keyboard_id in $keyboard_ids; do
-    echo "Getting keyboard state with ID: $keyboard_id"
+# varianta 2 - more robust for debugging
+# keyboard_ids=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*')
+# for keyboard_id in $keyboard_ids; do
+#     # echo "Getting keyboard state with ID: $keyboard_id"
+#     keyboard_state=$(xinput query-state "$keyboard_id")
 
-    # shift down
-    if xinput query-state "$keyboard_id" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
-        SHIFT_PRESSED=true
-        if [ "$MBUTTON" == "b8" ]; then
-            ./key_sender.sh shift+r
-            break
-        fi
-        if [ "$MBUTTON" == "b9" ]; then
-            ./key_sender.sh shift+r
-            break
-        fi
+#     # shift down
+#     if echo "$keyboard_state" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
+#         SHIFT_PRESSED=true
+#     fi
+#     # left control down
+#     if echo "$keyboard_state" | grep -q 'key\[37\]=down'; then
+#         CONTROL_PRESSED=true
+#     fi
+#     # left alt down
+#     if echo "$keyboard_state" | grep -q 'key\[64\]=down'; then
+#         ALT_PRESSED=true
+#     fi
+# done
+
+# left shift down event
+#if xinput query-state "$keyboard_id" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
+if [ "$SHIFT_PRESSED" = true ]; then
+    if [ "$MBUTTON" == "b8" ]; then
+        ./key_sender.sh shift+r
     fi
-
-    # control down
-    if xinput query-state "$keyboard_id" | grep -q 'key\[37\]=down'; then
-        CONTROL_PRESSED=true
-        if [ "$MBUTTON" == "b8" ]; then
-            ./key_sender.sh shift+r
-            break
-        fi
-        if [ "$MBUTTON" == "b9" ]; then
-            ./key_sender.sh shift+r
-            break
-        fi
+    if [ "$MBUTTON" == "b9" ]; then
+        ./key_sender.sh shift+r
     fi
+fi
 
-    # alt down
-    if xinput query-state "$keyboard_id" | grep -q 'key\[64\]=down'; then
-        ALT_PRESSED=true
-        if [ "$MBUTTON" == "b8" ]; then
-            ./key_sender.sh alt+w
-            break
-        fi
-        if [ "$MBUTTON" == "b9" ]; then
-            ./key_sender.sh alt+s
-            break
-        fi
+# control down
+#if xinput query-state "$keyboard_id" | grep -q 'key\[37\]=down'; then
+if [ "$CONTROL_PRESSED" = true ]; then
+    if [ "$MBUTTON" == "b8" ]; then
+        ./key_sender.sh shift+r
     fi
-done
+    if [ "$MBUTTON" == "b9" ]; then
+        ./key_sender.sh shift+r
+    fi
+fi
+
+# alt down
+#if xinput query-state "$keyboard_id" | grep -q 'key\[64\]=down'; then
+if [ "$ALT_PRESSED" = true ]; then
+    if [ "$MBUTTON" == "b8" ]; then
+        ./key_sender.sh alt+w
+    fi
+    if [ "$MBUTTON" == "b9" ]; then
+        ./key_sender.sh alt+s
+    fi
+fi
 
 # solo mouse buttons pressed
-
 if [ "$SHIFT_PRESSED" = false -a "$CONTROL_PRESSED" = false -a "$ALT_PRESSED" = false ]; then
     if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L' && ! xdotool getwindowfocus getwindowname | grep -q 'Shift_L'; then
         if [ "$MBUTTON" == "b8" ]; then
@@ -73,4 +92,3 @@ if [ "$SHIFT_PRESSED" = false -a "$CONTROL_PRESSED" = false -a "$ALT_PRESSED" = 
         fi
     fi
 fi
-

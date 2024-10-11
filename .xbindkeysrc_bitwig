@@ -53,7 +53,6 @@ Shift + b:8
 "./toggle_parser.sh b8"
 Control + b:8
 
-
 # Play from Cursor
 "./toggle_parser.sh b9"
 b:9
