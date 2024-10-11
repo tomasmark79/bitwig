@@ -1,12 +1,12 @@
 #!/bin/bash
 # Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
-# This file registers the mouse buttons for Bitwig Studio
 
-# It is required to have alternated key same as the target alternate key in Bitwig Studio!
-# That means Alt + Mouse Button is required to have defined Alt + AnyKey in Bitwig Studio, etc.
+# Important for Proper Functionality
+# It is required that the alternate key matches the target alternate key shortcut in Bitwig Studio.
+# This means that if you assign Alt + any mouse button, you also need to define the corresponding Alt + key shortcut in Bitwig Studio, and so on.
 
 if [ -z "$1" ]; then
-    notify-send "toogle_parser usage: $0 <mbutton>"
+    # notify-send "toogle_parser usage: $0 <mbutton>"
     exit 1
 fi
 
@@ -19,15 +19,15 @@ ALT_PRESSED=false
 # varianta 1 - improved performance
 keyboard_states=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*' | xargs -I{} xinput query-state {})
 if echo "$keyboard_states" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
-    notify-send "Shift pressed"
+    #notify-send "Shift pressed"
     SHIFT_PRESSED=true
 fi
 if echo "$keyboard_states" | grep -q 'key\[37\]=down'; then
-    notify-send "Control pressed"
+    #notify-send "Control pressed"
     CONTROL_PRESSED=true
 fi
 if echo "$keyboard_states" | grep -q 'key\[64\]=down'; then
-    notify-send "Alt pressed"
+    #notify-send "Alt pressed"
     ALT_PRESSED=true
 fi
 

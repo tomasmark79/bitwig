@@ -1,6 +1,5 @@
 #!/bin/bash
 # Copyright (c) 2024 Tomas Mark (tomas@digitalspace.name)
-# This file registers the mouse buttons for Bitwig Studio
 
 # Check if a key parameter is provided
 if [ -z "$1" ]; then
@@ -29,10 +28,9 @@ for WINDOW_ID in $WINDOW_IDS; do
     
     xdotool key --window $WINDOW_ID $KEY
     
-    # todo
+    # todo - multi alt. keys support
     # clear modifiers maybe required for cross pass alt. keys differents in Bitwig Studio and xbindkeys
     # xdotool key --clearmodifiers --window $WINDOW_ID $KEY
-    
     exit 0
   fi
 done
