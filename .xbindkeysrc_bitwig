@@ -37,34 +37,25 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
-# Play from Start
+# All toggle variants
 "./toggle_parser.sh b8"
 b:8
-
-# Mute toggle 
 "./toggle_parser.sh b8"
 Alt + b:8
-
-# 
 "./toggle_parser.sh b8"
 Shift + b:8
-
-# 
 "./toggle_parser.sh b8"
 Control + b:8
-
-# Play from Cursor
 "./toggle_parser.sh b9"
 b:9
-
-# Solo toggle
 "./toggle_parser.sh b9"
 Alt + b:9
-
-# 
 "./toggle_parser.sh b9"
 Shift + b:9
-
-# 
 "./toggle_parser.sh b9"
 Control + b:9
+
+## testing
+Control + Shift + b:9
+"./toggle_parser.sh b9"
+ 

@@ -19,12 +19,15 @@ ALT_PRESSED=false
 # varianta 1 - improved performance
 keyboard_states=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*' | xargs -I{} xinput query-state {})
 if echo "$keyboard_states" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
+    notify-send "Shift pressed"
     SHIFT_PRESSED=true
 fi
 if echo "$keyboard_states" | grep -q 'key\[37\]=down'; then
+    notify-send "Control pressed"
     CONTROL_PRESSED=true
 fi
 if echo "$keyboard_states" | grep -q 'key\[64\]=down'; then
+    notify-send "Alt pressed"
     ALT_PRESSED=true
 fi
 
@@ -52,10 +55,10 @@ fi
 #if xinput query-state "$keyboard_id" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
 if [ "$SHIFT_PRESSED" = true ]; then
     if [ "$MBUTTON" == "b8" ]; then
-        ./key_sender.sh shift+r
+        ./key_sender.sh shift+s
     fi
     if [ "$MBUTTON" == "b9" ]; then
-        ./key_sender.sh shift+r
+        ./key_sender.sh shift+s
     fi
 fi
 
@@ -63,10 +66,10 @@ fi
 #if xinput query-state "$keyboard_id" | grep -q 'key\[37\]=down'; then
 if [ "$CONTROL_PRESSED" = true ]; then
     if [ "$MBUTTON" == "b8" ]; then
-        ./key_sender.sh shift+r
+        ./key_sender.sh control+u
     fi
     if [ "$MBUTTON" == "b9" ]; then
-        ./key_sender.sh shift+r
+        ./key_sender.sh control+u
     fi
 fi
 
@@ -77,7 +80,7 @@ if [ "$ALT_PRESSED" = true ]; then
         ./key_sender.sh alt+w
     fi
     if [ "$MBUTTON" == "b9" ]; then
-        ./key_sender.sh alt+s
+        ./key_sender.sh alt+w
     fi
 fi
 

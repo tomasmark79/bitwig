@@ -13,30 +13,31 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 ## project is using this default profile fit to me
 
+![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
+
 note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
 
 <img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
 
  - Button 4 toggle **Play/Stop** from arranger start (key spacebar)
    
- - Button 5 toggle **Play/Stop** from arranger cursor (key alt+p)
+ - Button 5(b:9) toggle **Play/Stop** from arranger cursor (key alt+p)
 
 <img width="54" alt="image" src="https://github.com/user-attachments/assets/d215452d-6229-4111-b9e7-30695817c846">
 
- - Shift + Button 4 toggle **Arm** from arranger start (key shift+r)
-   
- - Alt + Button 4 toggle **Solo** from arranger start (key alt+s)
-   
- - Alt + Button 5 toggle **Mute** from arranger cursor (key alt+w)
-
+ - Ctrl + Button 5(b:9) toggle **Arm** from arranger start (key control+u)
  
- - Shift + Button 5 toggle **??/??** from arranger cursor (key shift+???)
-
- - Control + Button 4 toggle **??/??** from arranger start (key control+???)
+ - Shift + Button 5(b:9) toggle **Solo** from arranger start (key shift+s)
    
- - Control + Button 5 toggle **??/??** from arranger cursor (key control+???)
+ - Alt + Button 5(b:9) toggle **Mute** from arranger cursor (key alt+w)
+ 
+reserved
 
-![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
+ - Ctrl + Button 4(b:8) toggle **??** from arranger start (key control+??)
+ 
+ - Shift + Button 4(b:8) toggle **??** from arranger start (key shift+??)
+   
+ - Alt + Button 4(b:8) toggle **??** from arranger cursor (key alt+??)
 
 ## recomendation
 

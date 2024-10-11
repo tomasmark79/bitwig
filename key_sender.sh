@@ -26,7 +26,7 @@ for WINDOW_ID in $WINDOW_IDS; do
     # Activate Bitwig Studio
     xdotool windowactivate --sync $WINDOW_ID
     # Send the specified key to Bitwig Studio
-    xdotool key --window $WINDOW_ID $KEY
+    xdotool key --clearmodifiers --window $WINDOW_ID $KEY
     exit 0
   fi
 done
