@@ -7,8 +7,6 @@ As another option, how to control Bitwig Studio under all circumstances, was to 
 ## success
 Finally, I came up with the idea of ​​using a 🖱️ mouse with side buttons that every user has available. 🐁🍒🫐
 
-Finally, I came up with the idea of **​​using an ordinary 5-button** 🐁 **mouse** 🐁 as the Bitwig Studio transport controller. 🖱️🍒🫐
-
 💥 **It is very intuitive and addictive!** 💥
 
 And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!
