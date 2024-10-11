@@ -26,7 +26,13 @@ for WINDOW_ID in $WINDOW_IDS; do
     # Activate Bitwig Studio
     xdotool windowactivate --sync $WINDOW_ID
     # Send the specified key to Bitwig Studio
-    xdotool key --clearmodifiers --window $WINDOW_ID $KEY
+    
+    xdotool key --window $WINDOW_ID $KEY
+    
+    # todo
+    # clear modifiers maybe required for cross pass alt. keys differents in Bitwig Studio and xbindkeys
+    # xdotool key --clearmodifiers --window $WINDOW_ID $KEY
+    
     exit 0
   fi
 done
