@@ -38,31 +38,34 @@
 #keystate_scrolllock= enable
 
 # Play from Start
-"./toggle_alt_b8.sh"
+"./toggle_parser.sh b8"
 b:8
 
 # Mute toggle 
-"./toggle_alt_b8.sh"
+"./toggle_parser.sh b8"
 Alt + b:8
 
+# 
+"./toggle_parser.sh b8"
+Shift + b:8
+
+# 
+"./toggle_parser.sh b8"
+Control + b:8
+
+
 # Play from Cursor
-"./toggle_alt_b9.sh"
+"./toggle_parser.sh b9"
 b:9
 
 # Solo toggle
-"./toggle_alt_b9.sh"
+"./toggle_parser.sh b9"
 Alt + b:9
 
-# Arm toggle - TODO - zatím nefunguje
-"./toggle_shift_b9.sh"
+# 
+"./toggle_parser.sh b9"
 Shift + b:9
 
-# Nechme pro budoucí možnosti
-# # mouse button 8 (bez Alt)
-# # Play/Stop
-# "if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L'; then ./key_sender.sh space; fi"
-# b:8
-# # Zabránění spuštění akce po kombinaci Alt + b:8
-# "if [ ! -f /tmp/alt_b8_pressed ]; then ./key_sender.sh space; fi; rm -f /tmp/alt_b8_pressed"
-# b:8 + Release
-
+# 
+"./toggle_parser.sh b9"
+Control + b:9
