@@ -19,7 +19,7 @@ note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 
 
 <img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
 
- - Button 4 toggle **Play/Stop** from arranger start (key spacebar)
+ - Button 4(b:8) toggle **Play/Stop** from arranger start (key spacebar)
    
  - Button 5(b:9) toggle **Play/Stop** from arranger cursor (key alt+p)
 
