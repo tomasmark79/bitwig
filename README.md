@@ -11,6 +11,44 @@ Finally, I came up with the idea of **​​using an ordinary 5-button** 🐁 **
 
 And as it turns out, not only is it great, but it's also perfectly user-friendly and I got used to it immediately. Come with me and see how I came up with it. And in case you have any other interesting idea, don't hesitate to send it to me!
 
+## project is using this default profile fit to me
+
+note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
+
+<img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
+
+ - Button 4 toggle **Play/Stop** from arranger start (key spacebar)
+   
+ - Button 5 toggle **Play/Stop** from arranger cursor (key alt+p)
+
+<img width="54" alt="image" src="https://github.com/user-attachments/assets/d215452d-6229-4111-b9e7-30695817c846">
+
+ - Shift + Button 4 toggle **Arm** from arranger start (key shift+r)
+   
+ - Alt + Button 4 toggle **Solo** from arranger start (key alt+s)
+   
+ - Alt + Button 5 toggle **Mute** from arranger cursor (key alt+w)
+
+ 
+ - Shift + Button 5 toggle **??/??** from arranger cursor (key shift+???)
+
+ - Control + Button 4 toggle **??/??** from arranger start (key control+???)
+   
+ - Control + Button 5 toggle **??/??** from arranger cursor (key control+???)
+
+![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
+
+## recomendation
+
+"I'm using KDE Plasma, and I have both start and stop scripts managed by global keyboard shortcuts, which is very useful for switching between Bitwig and other applications, such as browsers, where side mouse buttons can also be useful."
+
+## project files description
+
+#### you will want to edit
+
+File `.xbindkeysrc_bitwig` is responsible for definition od shortcuts at high level.
+File `toggle_parser.sh` is shell script responsible for specific shortcuts behavior.
+
 ## requirements
 
 `Any Linux with X11 window server`
@@ -57,13 +95,6 @@ eopg
 sudo eopkg install -y git xbindkeys xdotool && git clone https://github.com/tomasmark79/bitwig-transport-control-script.git && cd bitwig-transport-control-script/ && chmod +x start_environment.sh && chmod +x stop_environment.sh && chmod +x toggle_parser.sh && chmod +x key_sender.sh && ls -l
 ```
 
-## project files description
-
-#### you will want to edit
-
-File `.xbindkeysrc_bitwig` is responsible for definition od shortcuts at high level.
-File `toggle_parser.sh` is shell script responsible for specific shortcuts behavior.
-
 #### you won't need to edit
 
 File `start_environment.sh` is shell script responsible for monitoring events from devices.
@@ -77,27 +108,6 @@ File `key_sender.sh` is shell script responsible for sending commands to Bitwig 
 `./stop_environment.sh`
 
 
-## project is using this default profile fit to me
-
-note: be aware that mouse buttons 4 and 5 are represented in my Linux OS as b:8 and b:9 in xbindkeys process
-
- - Button 4 toggle **Play/Stop** from arranger start (key spacebar)
- - Button 5 toggle **Play/Stop** from arranger cursor (key alt+p)
-
- - Alt + Button 4 toggle **Solo** from arranger start (key alt+s)
- - Alt + Button 5 toggle **Mute** from arranger cursor (key alt+w)
-
- - Shift + Button 4 toggle **Arm** from arranger start (key shift+r)
- - Shift + Button 5 toggle **??/??** from arranger cursor (key shift+???)
-
- - Control + Button 4 toggle **??/??** from arranger start (key control+???)
- - Control + Button 5 toggle **??/??** from arranger cursor (key control+???)
-
-![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
-
-## recomendation
-
-"I'm using KDE Plasma, and I have both start and stop scripts managed by global keyboard shortcuts, which is very useful for switching between Bitwig and other applications, such as browsers, where side mouse buttons can also be useful."
 
 ## issues
 
