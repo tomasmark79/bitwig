@@ -22,7 +22,8 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 #### You can use any kind of computer mouse with 4 and more buttons
 
-![mouse45](https://github.com/user-attachments/assets/e479c395-9618-445c-a57c-92f1fafd8cdb)
+![bitwig-button-transport-mouse-buttons-map](https://github.com/user-attachments/assets/58d5145c-df24-419e-b162-d2ffdc2ada4b)
+
 
 <img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
 
