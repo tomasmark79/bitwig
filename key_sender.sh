@@ -24,10 +24,12 @@ for WINDOW_ID in $WINDOW_IDS; do
   if [[ "$WINDOW_NAME" == *"Bitwig Studio"* ]]; then
     # Activate Bitwig Studio
     xdotool windowactivate --sync $WINDOW_ID
-    # Send the specified key to Bitwig Studio
-    
-    xdotool key --window $WINDOW_ID $KEY
-    
+
+    # Send the specified key to Bitwig Studio if not onlyfocus request
+    if [ "$KEY" != "onlyfocus" ]; then
+        xdotool key --window $WINDOW_ID $KEY
+    fi
+   
     # todo - multi alt. keys support
     # clear modifiers maybe required for cross pass alt. keys differents in Bitwig Studio and xbindkeys
     # xdotool key --clearmodifiers --window $WINDOW_ID $KEY

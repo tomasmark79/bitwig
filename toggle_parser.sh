@@ -12,12 +12,17 @@ fi
 
 MBUTTON=$1
 
+SUPER_PRESSED=false
 SHIFT_PRESSED=false
 CONTROL_PRESSED=false
 ALT_PRESSED=false
 
 # varianta 1 - improved performance
 keyboard_states=$(xinput list | grep -i 'keyboard' | grep -o 'id=[0-9]*' | grep -o '[0-9]*' | xargs -I{} xinput query-state {})
+if echo "$keyboard_states" | grep -q 'key\[133\]=down'; then
+    #notify-send "Super pressed"
+    SUPER_PRESSED=true
+fi
 if echo "$keyboard_states" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
     #notify-send "Shift pressed"
     SHIFT_PRESSED=true
@@ -54,10 +59,10 @@ fi
 # left shift down event
 #if xinput query-state "$keyboard_id" | grep -q 'key\[50\]=down\|key\[62\]=down'; then
 if [ "$SHIFT_PRESSED" = true ]; then
-    if [ "$MBUTTON" == "b8" ]; then
+    if [ "$MBUTTON" == "b4" ]; then
         ./key_sender.sh shift+s
     fi
-    if [ "$MBUTTON" == "b9" ]; then
+    if [ "$MBUTTON" == "b5" ]; then
         ./key_sender.sh shift+s
     fi
 fi
@@ -65,10 +70,10 @@ fi
 # control down
 #if xinput query-state "$keyboard_id" | grep -q 'key\[37\]=down'; then
 if [ "$CONTROL_PRESSED" = true ]; then
-    if [ "$MBUTTON" == "b8" ]; then
+    if [ "$MBUTTON" == "b4" ]; then
         ./key_sender.sh control+u
     fi
-    if [ "$MBUTTON" == "b9" ]; then
+    if [ "$MBUTTON" == "b5" ]; then
         ./key_sender.sh control+u
     fi
 fi
@@ -76,21 +81,21 @@ fi
 # alt down
 #if xinput query-state "$keyboard_id" | grep -q 'key\[64\]=down'; then
 if [ "$ALT_PRESSED" = true ]; then
-    if [ "$MBUTTON" == "b8" ]; then
+    if [ "$MBUTTON" == "b4" ]; then
         ./key_sender.sh alt+w
     fi
-    if [ "$MBUTTON" == "b9" ]; then
+    if [ "$MBUTTON" == "b5" ]; then
         ./key_sender.sh alt+w
     fi
 fi
 
-# solo mouse buttons pressed
+# solo mouse b4 or b5 
 if [ "$SHIFT_PRESSED" = false -a "$CONTROL_PRESSED" = false -a "$ALT_PRESSED" = false ]; then
     if ! xdotool getwindowfocus getwindowname | grep -q 'Alt_L' && ! xdotool getwindowfocus getwindowname | grep -q 'Shift_L'; then
-        if [ "$MBUTTON" == "b8" ]; then
+        if [ "$MBUTTON" == "b4" ]; then
             ./key_sender.sh alt+p
         fi
-        if [ "$MBUTTON" == "b9" ]; then
+        if [ "$MBUTTON" == "b5" ]; then
             ./key_sender.sh space
         fi
     fi

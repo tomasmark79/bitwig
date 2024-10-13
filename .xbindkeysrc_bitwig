@@ -40,19 +40,35 @@
 # This file registers the mouse buttons for Bitwig Studio
 
 # All toggle variants
-"./toggle_parser.sh b8"
+
+"./toggle_parser.sh b4"
 b:8
-"./toggle_parser.sh b8"
+
+"./toggle_parser.sh b4"
 Alt + b:8
-"./toggle_parser.sh b8"
+
+"./toggle_parser.sh b4"
 Shift + b:8
-"./toggle_parser.sh b8"
+
+"./toggle_parser.sh b4"
 Control + b:8
-"./toggle_parser.sh b9"
+
+"./toggle_parser.sh b5"
 b:9
-"./toggle_parser.sh b9"
+
+"./toggle_parser.sh b5"
 Alt + b:9
-"./toggle_parser.sh b9"
+
+"./toggle_parser.sh b5"
 Shift + b:9
-"./toggle_parser.sh b9"
-Control + b:9 
+
+"./toggle_parser.sh b5"
+Control + b:9
+
+# This is not required because Btn6 for Logitech G305 can be mapped as any custom shortcut kombination in original Logitech software.
+
+# Example of multi key command
+#"./toggle_parser.sh XY"
+#Control + Shift + Alt + period
+#"./toggle_parser.sh XY"
+#Control + Shift + Alt + period + Release

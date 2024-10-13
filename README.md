@@ -20,16 +20,24 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
 
 ---
 
-#### You can use any kind of computer mouse with 4 and more buttons
+#### Important note
+
+For the Logit3ch G305, and many more mice it is also possible to use the 6th mouse button thanks to the Logit3ch software, where you can assign any key combination to the number 6 button and save this configuration in the mouse memory. 
+    
+Some manufacturers including Logite3ch also allow other buttons to be mapped. In that case, you don't need this project and just simply map your own keystrokes for your mouse. **In case you have a mouse that does not support hardware storage of keyboard shortcuts with its internal memory, the following project will come in handy. The advantage of using a project is that if you change the mouse, you will still be functional.**
+
+#### mouse layout
 
 ![bitwig-button-transport-mouse-buttons-map](https://github.com/user-attachments/assets/58d5145c-df24-419e-b162-d2ffdc2ada4b)
 
-
+#### Keystrokes
 <img width="123" alt="image" src="https://github.com/user-attachments/assets/1d697483-211b-4ee4-b1c3-f63c5516d836">
 
  - Button 4(b:8) toggle **Play/Stop** from arranger start (key spacebar)
    
  - Button 5(b:9) toggle **Play/Stop** from arranger cursor (key alt+p)
+
+ - Button 6 - mouse device hardware memory used to storage keystroke
 
 <img width="54" alt="image" src="https://github.com/user-attachments/assets/d215452d-6229-4111-b9e7-30695817c846">
 
@@ -39,7 +47,7 @@ And as it turns out, not only is it great, but it's also perfectly user-friendly
    
  - Alt + Button 5(b:9) toggle **Mute** from arranger cursor (key alt+w)
  
-reserved
+reserved for future
 
  - Ctrl + Button 4(b:8) toggle **??** from arranger start (key control+??)
  
