@@ -37,7 +37,7 @@ Some manufacturers including Logite3ch also allow other buttons to be mapped. In
    
  - Button 5(b:9) toggle **Play/Stop** from arranger cursor (key alt+p)
 
- - Button 6 - mouse device hardware memory used to storage keystroke
+ - Button 6 - used mouse memory to reproduce keystroke
 
 <img width="54" alt="image" src="https://github.com/user-attachments/assets/d215452d-6229-4111-b9e7-30695817c846">
 
